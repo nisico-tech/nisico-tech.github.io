@@ -345,3 +345,21 @@ html,body{overflow-x:clip}
 @media(min-width:1100px){.shots{justify-content:flex-start;overflow-x:auto}}
 .shot:first-child{margin-left:auto}
 .shot:last-child{margin-right:auto}
+
+/* Shared fixes from QUESTIONS.md, 2026-11-02 (steply-1, holdline-2, pennylab-1, stillwater-1/2/3) */
+.phone.has-shot .phone-screen{padding:0;gap:0;background:var(--card)}
+.ps-shot{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.chip.c0{left:-4%;top:74%}
+.chip.c1{right:-4%;top:12%;bottom:auto}
+.chip{max-width:min(250px,60vw);white-space:normal}
+.shot-frame img{max-width:100%}
+.shot{min-width:0}
+@media(max-width:600px){
+  .hero-art{display:flex;flex-direction:column;align-items:center;gap:14px;min-height:0}
+  .chips{position:static;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;pointer-events:auto}
+  .chip,.chip.c0,.chip.c1{position:static;animation:none;transform:none;max-width:none}
+}
+/* A real screen in the hero phone: chips go in a row under it, never over it */
+.hero-art.with-shot{display:flex;flex-direction:column;align-items:center;gap:16px;min-height:0}
+.hero-art.with-shot .chips{position:static;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.hero-art.with-shot .chip{position:static;animation:none;transform:none;max-width:none}
