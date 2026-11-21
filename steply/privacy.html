@@ -13,7 +13,7 @@ table{border-collapse:collapse;width:100%;font-size:15px} th,td{border:1px solid
 a{color:inherit} footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
 </style></head><body><main>
 <h1>Steply privacy policy</h1>
-<p>Last updated: 20 November 2026</p>
+<p>Last updated: 21 November 2026</p>
 <p>Steply is a visual routine app for parents and other grown-ups who care for a child. A grown-up builds picture routines and a child follows them one card at a time. This policy says what Steply uses, why, who else is involved, how long we keep it and what you can do about it.</p>
 <h2>The short version</h2>
 <ul>
@@ -21,7 +21,7 @@ a{color:inherit} footer{margin-top:48px;padding-top:16px;border-top:1px solid va
 <li><strong>An account is optional.</strong> With one, your child's first name, routines and progress are kept on our server in Frankfurt, Germany, so they are on all your family's phones. Before anything about your child is uploaded, we ask you to confirm that you are the child's parent or guardian and that you agree.</li>
 <li><strong>Your family's content is encrypted on your phone</strong> before it is synced, so our server cannot read it. To keep phones in step, the server still sees random ids, dates and times, and simple settings.</li>
 <li><strong>Photos and voice recordings</strong> are uploaded only if you turn on backup, and they are encrypted on your phone first. A routine link you create includes that routine's photos unless you turn them off.</li>
-<li><strong>No usage statistics, no crash reporting and no install id are sent</strong> by this version of Steply.</li>
+<li><strong>Usage statistics only if you say yes.</strong> Steply asks once. If you agree, it sends anonymous statistics from parent mode (which screens are opened and which features are used), never about your child and never linked to you or your phone. You can turn them off in Settings at any time. No crash reporting.</li>
 <li>Your child never has an account and is never asked for anything.</li>
 <li>No ads, no selling of data, no tracking across other companies' apps or websites, no profiling, no AI training on your content.</li>
 <li>You can delete your account and your family's data on our server from inside the app at any time.</li>
@@ -66,8 +66,15 @@ a{color:inherit} footer{margin-top:48px;padding-top:16px;border-top:1px solid va
 <p>From Settings &gt; Support you can send us a problem report. You see the full text before you tap Send. It holds what you type (a name you choose and what happened) and a short diagnostic (app version, device model, OS version, recent error codes) with personal content removed; no photos. It goes to our server in Frankfurt and we keep it <strong>30 days</strong>. To prevent abuse we keep a salted hash of your IP address for about <strong>one hour</strong>.</p>
 <h2>App updates</h2>
 <p>Steply can download small updates of its own code from Expo's update service, which sees your IP address and the app version when it checks.</p>
-<h2>No usage statistics</h2>
-<p>This version of Steply sends no usage statistics, no crash reports and no install id or other identifier for analytics. If a later version asks to send optional statistics, it will ask you first and this policy will say so before that version reaches you.</p>
+<h2>Optional usage statistics</h2>
+<p>Steply asks you once, in parent mode, whether to share anonymous usage statistics. Nothing is sent unless you tap "Share anonymous statistics", and you can turn it off any time in Settings &gt; What is shared.</p>
+<ul>
+<li><strong>What is sent:</strong> that the app was opened, which parent screens were opened and which features were used (for example that a Plan B card was used or a photo was added), the app version and the phone's operating system, and roughly how long ago Steply was installed (in ranges such as "8-30 days").</li>
+<li><strong>What is never sent:</strong> anything from child mode or about your child, names, email, photos, voice recordings, routine or step names, anything you type, your account, your IP address or your location.</li>
+<li><strong>No identifier:</strong> each app start uses a new random number, so the statistics cannot be linked to you, your child, your phone or each other across app starts. There are no profiles.</li>
+<li><strong>Where:</strong> PostHog Inc., EU cloud in Frankfurt, Germany. We keep the statistics at most 12 months.</li>
+<li><strong>Why:</strong> to see which parts of Steply help and which confuse, so we can fix them.</li>
+</ul>
 <h2>Why we use it (GDPR legal bases)</h2>
 <table>
 <thead>
@@ -96,6 +103,10 @@ a{color:inherit} footer{margin-top:48px;padding-top:16px;border-top:1px solid va
 <tr>
 <td>Security, abuse prevention, server logs, problem reports, support</td>
 <td>Our legitimate interest in keeping Steply safe and fixing it (Art. 6(1)(f))</td>
+</tr>
+<tr>
+<td>Optional usage statistics</td>
+<td>Your consent, asked once in the app (Art. 6(1)(a)); withdraw it in Settings. Storing and reading on your phone only what this needs (ePrivacy Art. 5(3)) is covered by the same consent</td>
 </tr>
 <tr>
 <td>Records the law requires, proof of consent</td>
@@ -139,6 +150,12 @@ a{color:inherit} footer{margin-top:48px;padding-top:16px;border-top:1px solid va
 <td>App updates</td>
 <td>IP address, app version</td>
 <td>United States</td>
+</tr>
+<tr>
+<td>PostHog Inc.</td>
+<td>Optional usage statistics, only if you agree</td>
+<td>Anonymous events (screens opened, features used, app version, install-age range); no IP address kept</td>
+<td>EU cloud, Frankfurt, Germany. PostHog is a US company</td>
 </tr>
 <tr>
 <td>GitHub, Inc.</td>
@@ -203,6 +220,10 @@ a{color:inherit} footer{margin-top:48px;padding-top:16px;border-top:1px solid va
 <tr>
 <td>Problem reports</td>
 <td>30 days</td>
+</tr>
+<tr>
+<td>Optional usage statistics</td>
+<td>At most 12 months</td>
 </tr>
 <tr>
 <td>IP address hashes for abuse prevention</td>
